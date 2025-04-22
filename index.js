@@ -44,7 +44,7 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
-app.use("", authRoute);
+app.use("/api/v1/register", authRoute);
 app.use("/api/v1/tours", tourRoute);
 app.use("/api/v1/search", searchRoute);
 app.use("/api/v1/users", userRoute);
